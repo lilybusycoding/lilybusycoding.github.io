@@ -497,15 +497,19 @@
       <div>
         <div class="project-header">
           <div class="project-num">03</div>
-          <div class="project-title">Event-Tracking Platform</div>
+          <div class="project-title">GenAI Safety & Hallucination Prevention</div>
         </div>
         <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">Led cross-functional rollout of a standardized event-tracking platform that unlocked reliable experimentation across all marketplace surfaces. Partnered with engineering and analytics to define the data schema, drive adoption, and establish a foundation for rigorous hypothesis-driven development at scale.</p>
+        <p class="project-desc">During the first GenAI milestone for Vrbo onboarding, identified a critical class of hallucinations where the model invented amenities not entered by partners (e.g., fabricating Wi-Fi availability), risking partner trust and regulatory compliance. Documented concrete failure cases with full request/response context, validated against the H&D PRD, and organized findings into a stakeholder readout. Led to prompt and guardrail changes before broader rollout — mitigating hallucinations across onboarding content and establishing a quality evaluation framework used in subsequent GenAI milestones.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
-          <div class="metric-num">∞</div>
-          <div class="metric-label">Experiments unlocked</div>
+          <div class="metric-num">🛡️</div>
+          <div class="metric-label">Hallucinations caught pre-launch</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">M1→M2</div>
+          <div class="metric-label">Safety framework carried forward</div>
         </div>
       </div>
     </div>
@@ -514,19 +518,40 @@
       <div>
         <div class="project-header">
           <div class="project-num">04</div>
-          <div class="project-title">App Acquisition Funnel Optimization</div>
+          <div class="project-title">PCO Regulatory Page — Unified Compliance Experience</div>
         </div>
-        <div class="project-company">Expedia Group · Intern</div>
-        <p class="project-desc">Led A/B testing initiatives to optimize app acquisition funnels across mobile web and desktop. Designed and ran experiments that meaningfully improved top-of-funnel conversion, delivering outsized business impact in a compressed internship timeline.</p>
+        <div class="project-company">Expedia Group · Vrbo</div>
+        <p class="project-desc">Regulatory data in Partner Central Onboarding was scattered across three separate surfaces, confusing partners and producing incomplete compliance data. Wrote the product narrative and requirements for a single dedicated regulatory page, partnered with design and engineering to consolidate all regulatory collection into one flow, and created analytics epics for pre/post measurement of completion rates and downstream AGL/MGL performance. Launched with 92% page conversion and full instrumentation, making regulatory failures visible and actionable for onboarding and compliance teams.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
-          <div class="metric-num">5%</div>
-          <div class="metric-label">Download rate increase</div>
+          <div class="metric-num">92%</div>
+          <div class="metric-label">Page conversion rate</div>
         </div>
         <div class="metric">
-          <div class="metric-num">4×</div>
-          <div class="metric-label">Gross profit lift</div>
+          <div class="metric-num">3→1</div>
+          <div class="metric-label">Surfaces consolidated</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-header">
+          <div class="project-num">05</div>
+          <div class="project-title">Onboarding Price Prediction & BRAVO Integration</div>
+        </div>
+        <div class="project-company">Expedia Group · Vrbo</div>
+        <p class="project-desc">Many Vrbo partners struggled to set effective starting prices at onboarding, resulting in underperforming "zombie" listings with low booking rates. Defined analytics and experiment designs for base-rate recommendations at onboarding, contributed to BRAVO rate automation integration, and tracked experiments and readout plans in leadership docs for visibility. Moved onboarding toward a cohesive pricing stack that combined contextual base-rate recommendations with BRAVO's automation — with instrumentation in place to quantify improvements in early bookings and listing activation.</p>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <div class="metric-num">↓</div>
+          <div class="metric-label">Zombie listing reduction</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">↑</div>
+          <div class="metric-label">Early booking activation</div>
         </div>
       </div>
     </div>
@@ -635,11 +660,11 @@
     <h2>Let's <em>Connect</em></h2>
     <p>Open to senior PM roles in AI product, marketplace platforms, and data-driven product development.</p>
     <div class="contact-links">
-      <a href="mailto:lily.xyang@gmail.com" class="contact-link">✉ lily.xyang@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#bad6d3d6c394c2c3dbd4ddfaddd7dbd3d694d9d5d7" class="contact-link">✉ <span class="__cf_email__" data-cfemail="f19d989d88df8988909f96b1969c90989ddf929e9c">[email&#160;protected]</span></a>
       <a href="https://www.linkedin.com/in/lilyyangprofile/" target="_blank" class="contact-link">in LinkedIn</a>
 
     </div>
-    <a href="mailto:lily.xyang@gmail.com" class="btn-primary">Say Hello →</a>
+    <a href="/cdn-cgi/l/email-protection#385451544116404159565f785f55595154165b5755" class="btn-primary">Say Hello →</a>
   </div>
 </section>
 
@@ -649,7 +674,7 @@
   <div>Built with <span>♥</span> for great products</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -664,14 +689,4 @@
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 200) current = s.getAttribute('id');
-    });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--terracotta)' : '';
-    });
-  });
-</script>
-</body>
-</html>
+    let 
