@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xue Yang — Product Manager</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+  
   :root {
     --cream: #F4F8FD;
     --cream2: #E8F2FB;
@@ -363,13 +363,10 @@
 
   /* ── SCROLL REVEAL ── */
   .reveal {
-    opacity: 1; transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.65s ease, transform 0.65s ease;
   }
-  .reveal.hidden {
-    opacity: 0; transform: translateY(24px);
-  }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
@@ -703,4 +700,4 @@
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
-    let 
+    let
