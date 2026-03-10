@@ -435,7 +435,7 @@
       </div>
       <div class="stat-card reveal">
         <div class="stat-number">10+</div>
-        <div class="stat-label">Years prior in Healthcare Operations</div>
+        <div class="stat-label">Years in Patient Care & Clinical Leadership</div>
       </div>
       <div class="stat-card reveal">
         <div class="stat-number">5%+</div>
@@ -524,7 +524,7 @@
           <div class="project-num">04</div>
           <div class="project-title">App Acquisition Funnel Optimization</div>
         </div>
-        <div class="project-company">Expedia Group · Intern</div>
+        <div class="project-company">Expedia Group</div>
         <p class="project-desc">Led A/B testing across mobile web and desktop to optimize app acquisition funnels. Identified conversion drop-offs, ran targeted experiments, and delivered measurable improvements to both download rate and gross profit — all within a summer internship timeline.</p>
       </div>
       <div class="project-metrics">
@@ -679,24 +679,6 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  const reveals = document.querySelectorAll('.reveal');
-  // Only animate if JS + IntersectionObserver works
-  if ('IntersectionObserver' in window) {
-    reveals.forEach(el => el.classList.add('hidden'));
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.remove('hidden');
-            entry.target.classList.add('visible');
-          }, i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-  }
-
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
