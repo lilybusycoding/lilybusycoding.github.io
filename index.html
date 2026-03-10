@@ -363,8 +363,11 @@
 
   /* ── SCROLL REVEAL ── */
   .reveal {
-    opacity: 0; transform: translateY(24px);
+    opacity: 1; transform: translateY(0);
     transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.hidden {
+    opacity: 0; transform: translateY(24px);
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
@@ -431,7 +434,7 @@
     <div class="about-stats">
       <div class="stat-card reveal">
         <div class="stat-number">3+</div>
-        <div class="stat-label">Years in AI Product at Expedia</div>
+        <div class="stat-label">Years in Marketplace Product at Expedia (incl. AI/ML)</div>
       </div>
       <div class="stat-card reveal">
         <div class="stat-number">10+</div>
@@ -462,7 +465,7 @@
           <div class="project-title">GenAI Listing Optimization</div>
         </div>
         <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">Owned 0→1 launch of a GenAI-powered listing optimization product for Vrbo partners. Defined product vision, model evaluation strategy, and experimentation roadmap across engineering, data science, and legal. Designed end-to-end AI product lifecycle including offline evaluation, prompt experimentation, A/B testing, and rollout guardrails — enabling safe deployment of open-source LLMs within marketplace compliance constraints.</p>
+        <p class="project-desc">Owned the 0→1 launch of a GenAI-powered product that helped partners create higher-quality listings. Defined the product vision, led cross-functional execution across engineering, data science, and legal, and designed the end-to-end AI lifecycle for safe deployment at marketplace scale — driving measurable gains in partner engagement and conversion.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
@@ -480,15 +483,19 @@
       <div>
         <div class="project-header">
           <div class="project-num">02</div>
-          <div class="project-title">ML Partner Recommendations</div>
+          <div class="project-title">ML-Powered Partner Growth</div>
         </div>
         <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">Launched an ML-powered partner recommendations engine, surfacing the right insights to the right partners at the right time. Collaborated cross-functionally with data science and engineering to define success metrics, oversee model productionization, and drive adoption across the partner platform.</p>
+        <p class="project-desc">Launched two ML-powered initiatives to help partners succeed on the platform — a recommendations engine surfacing actionable insights at the right time, and data-driven price recommendations integrated into onboarding to reduce underperforming listings. Both shipped with full experimentation and instrumentation, delivering measurable revenue impact.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
           <div class="metric-num">5%+</div>
           <div class="metric-label">Annualized revenue lift</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">↑</div>
+          <div class="metric-label">Early booking activation</div>
         </div>
       </div>
     </div>
@@ -497,19 +504,19 @@
       <div>
         <div class="project-header">
           <div class="project-num">03</div>
-          <div class="project-title">GenAI Safety & Hallucination Prevention</div>
+          <div class="project-title">GenAI Safety & Quality</div>
         </div>
         <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">During the first GenAI milestone for Vrbo onboarding, identified a critical class of hallucinations where the model invented amenities not entered by partners (e.g., fabricating Wi-Fi availability), risking partner trust and regulatory compliance. Documented concrete failure cases with full request/response context, validated against the H&D PRD, and organized findings into a stakeholder readout. Led to prompt and guardrail changes before broader rollout — mitigating hallucinations across onboarding content and establishing a quality evaluation framework used in subsequent GenAI milestones.</p>
+        <p class="project-desc">Identified a critical AI quality issue where model outputs were inconsistent with partner-provided data, posing risks to trust and compliance. Led early intervention before broad rollout — resulting in prompt and guardrail improvements that established a quality evaluation framework carried into future AI milestones.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
           <div class="metric-num">🛡️</div>
-          <div class="metric-label">Hallucinations caught pre-launch</div>
+          <div class="metric-label">Risk caught pre-launch</div>
         </div>
         <div class="metric">
           <div class="metric-num">M1→M2</div>
-          <div class="metric-label">Safety framework carried forward</div>
+          <div class="metric-label">Framework carried forward</div>
         </div>
       </div>
     </div>
@@ -518,10 +525,31 @@
       <div>
         <div class="project-header">
           <div class="project-num">04</div>
-          <div class="project-title">PCO Regulatory Page — Unified Compliance Experience</div>
+          <div class="project-title">App Acquisition Funnel Optimization</div>
+        </div>
+        <div class="project-company">Expedia Group · Intern</div>
+        <p class="project-desc">Led A/B testing across mobile web and desktop to optimize app acquisition funnels. Identified conversion drop-offs, ran targeted experiments, and delivered measurable improvements to both download rate and gross profit — all within a summer internship timeline.</p>
+      </div>
+      <div class="project-metrics">
+        <div class="metric">
+          <div class="metric-num">5%</div>
+          <div class="metric-label">Download rate increase</div>
+        </div>
+        <div class="metric">
+          <div class="metric-num">4×</div>
+          <div class="metric-label">Gross profit lift</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-header">
+          <div class="project-num">05</div>
+          <div class="project-title">Regulatory Compliance Experience</div>
         </div>
         <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">Regulatory data in Partner Central Onboarding was scattered across three separate surfaces, confusing partners and producing incomplete compliance data. Wrote the product narrative and requirements for a single dedicated regulatory page, partnered with design and engineering to consolidate all regulatory collection into one flow, and created analytics epics for pre/post measurement of completion rates and downstream AGL/MGL performance. Launched with 92% page conversion and full instrumentation, making regulatory failures visible and actionable for onboarding and compliance teams.</p>
+        <p class="project-desc">Identified fragmented regulatory data collection as a key source of partner confusion and compliance gaps. Led consolidation into a single, streamlined experience — achieving 92% page conversion and giving compliance teams clear visibility into onboarding failures for the first time.</p>
       </div>
       <div class="project-metrics">
         <div class="metric">
@@ -531,27 +559,6 @@
         <div class="metric">
           <div class="metric-num">3→1</div>
           <div class="metric-label">Surfaces consolidated</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div>
-        <div class="project-header">
-          <div class="project-num">05</div>
-          <div class="project-title">Onboarding Price Prediction & BRAVO Integration</div>
-        </div>
-        <div class="project-company">Expedia Group · Vrbo</div>
-        <p class="project-desc">Many Vrbo partners struggled to set effective starting prices at onboarding, resulting in underperforming "zombie" listings with low booking rates. Defined analytics and experiment designs for base-rate recommendations at onboarding, contributed to BRAVO rate automation integration, and tracked experiments and readout plans in leadership docs for visibility. Moved onboarding toward a cohesive pricing stack that combined contextual base-rate recommendations with BRAVO's automation — with instrumentation in place to quantify improvements in early bookings and listing activation.</p>
-      </div>
-      <div class="project-metrics">
-        <div class="metric">
-          <div class="metric-num">↓</div>
-          <div class="metric-label">Zombie listing reduction</div>
-        </div>
-        <div class="metric">
-          <div class="metric-num">↑</div>
-          <div class="metric-label">Early booking activation</div>
         </div>
       </div>
     </div>
@@ -676,15 +683,22 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
+  // Only animate if JS + IntersectionObserver works
+  if ('IntersectionObserver' in window) {
+    reveals.forEach(el => el.classList.add('hidden'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.remove('hidden');
+            entry.target.classList.add('visible');
+          }, i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  }
 
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
